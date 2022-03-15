@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Final.css" />
+</head>
+    <select id="winter" onchange="myFunction()">
+        <option value="0">qualification</option>
+        <option value="1">school</option>
+        <option value="2">deree</option>
+        <option value="3">postgradution</option>
+        <option value="4">phd</option>
+      </select>
+      <br>
+<select id="summer" onchange="myFunction()">
+    <option value="0">Age</option>
+    <option value="13">boy</option>
+    <option value="14">youth</option>
+    <option value="12">middle age</option>
+    <option value="11">old</option>
+  </select>
+<br>
+<select id="fall" onchange="myFunction()">
+  <option value="0">qualification</option>
+  <option value="1">school</option>
+  <option value="2">deree</option>
+  <option value="3">postgradution</option>
+  <option value="4">phd</option>
+</select>
+<br>
+<select id="spring" onchange="myFunction()">
+<option value="0">now</option>
+<option value="13">then</option>
+<option value="14">when</option>
+<option value="12">middle age</option>
+<option value="11">will</option>
+</select>
+
+<form action="/action_page.php">
+  <p>Please select your favorite Web language:</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+
+
+
+<h1>smoke is good</h1>
+
+
+</html>
+<body>
+<H2>My name is: <id="cat" span id="cold"></span></H2>
+    <H3>Result is: <class="rope" span id="hot"></span></H3>
+    <H4>Game boy: <class="rope" span id="cool"></span></H4>
+    <H5>Game girl: <class="rope" span id="warm"></span></H5>
+    <H6>tom boy: <class="rope" span id="demo"></span></H6>
+</body>
+
+<script>
+  function myFunction() {
+    var x = parseInt(document.getElementById("winter").value);
+    var y = parseInt(document.getElementById("summer").value);
+    var z = parseInt(document.getElementById("fall").value);
+    var v = parseInt(document.getElementById("spring").value);
+    var w = document.getElementById("demo").innerHTML = x+y+z+v;
+    document.getElementById("cold").innerHTML = x*1;
+    document.getElementById("hot").innerHTML = y*1;
+    document.getElementById("cool").innerHTML = z*1;
+    document.getElementById("warm").innerHTML = v*1;
+  }
+  </script>
